@@ -2,7 +2,7 @@ language: generic
 sudo: required
 
 before_install:
-  - docker build -t nancibonfim/docker-k8s -f Dockerfile.dev
+  - docker build -t nancibonfim/docker-k8s -f Dockerfile.dev .
 
 script:
   - docker run -e CI=true nancibonfim/docker-k8s npm run test -- --coverage
