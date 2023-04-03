@@ -1,0 +1,18 @@
+language: generic
+sudo: required
+
+before_install:
+  - docker build -t nancibonfim/docker-k8s -f Dockerfile.dev
+
+script:
+  - docker run -e CI=true nancibonfim/docker-k8s npm run test -- --coverage
+
+deploy:
+  provider: elasticbeanstalk
+  region: "sa-east-1"
+  app: "docker-react"
+  env: "docker-react"
+  bucket_name: "elasticbeanstalk-sa-east-1-885646535386"
+  bucket_path: "docker-react"
+  on:
+    branch: main
