@@ -18,5 +18,8 @@ deploy:
   env: "docker-react"
   bucket_name: "elasticbeanstalk-sa-east-1-885646535386"
   bucket_path: "docker-react"
-  on:
+  true:
     branch: main
+env:
+  global:
+    secure: "Jv8bSq+yHMFtyXUJe4pgZx6dno23iUzo5gQsZX12mIk+RJ4MKkcO2Fs3jPegRvaT7V5eHe9mOLXf5zHkhy+5naetaJUyV0Pgmvm08IM/3N1n5WtRsPdnGYjdt3S8IPZw63v6CBafSxSPDzAgE4siSGtYqwsaznCbiDmWHCv4J8mzY3mIzWfzyYdqXezDqjSMLxMSaKAHFeUepvS+rSLtW2Rszoh/R2rKM12FTE6Kc55v1JreQs6oWrgSOIpxbblD2XkYWDmLCuxhI10GVOuCzd5v4J7jnLSVJ+OEIVVuIja+/tWRFDm0sH1u0KBvMo/qzOc8cntkKcpwQODQqqLH7dTTxPgRaBEazJ7igh1BB/lCqyBimPu6esRf23NtfC35bDwmPdVhdgUaRspnWPob6fFTyP4EpE7lUo3E7JRJ2m0MkR5X6TsjIvbdGo4GPHonIsKUkKl4q7TAefQvRbsWDtJnq6HpAbt6OEjY6vXKFFxvFtzXgTvNCk+klDUutUs+3H1r+dkl95y82Nax9MKciqpaB2uabL1apYaOAkf8YuUdPPD7gzWYuCGEbRAayzE6zstibX+26XKT4x4PX5njJ2Ea3hM0Ky/3ahveXNXKDyEzP+vV8l9Zbl1yu3OPXM1lbsgqWTa/YTtHfYWEfO5SO2g5I6sKotRf1ULj0cgyRlU="
